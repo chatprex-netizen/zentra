@@ -22,8 +22,9 @@ const PropertyDetailsModal = ({ property, onClose }) => {
   const currencySymbol = property.currency === 'PEN' ? 'S/' : '$';
 
   const handleWhatsApp = () => {
+    const phone = import.meta.env.VITE_WHATSAPP_NUMBER || '51999999999';
     const message = `Hola, estoy interesado en la propiedad "${property.title}" que vi en su página web. ¿Podrían darme más información?`;
-    const whatsappUrl = `https://wa.me/51999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
