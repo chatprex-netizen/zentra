@@ -1,33 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #FCB045;
-  --primary-hover: #e59a35;
-  --bg-color: #FAFAFA;
+  /* ── Primary: Deep Navy Teal ── */
+  --primary-color: #1A3F5C;
+  --primary-hover: #1E5276;
+  --primary-light: #2A6494;
+  --primary-subtle: rgba(26, 63, 92, 0.08);
+
+  /* ── Secondary: Vibrant Mint Green ── */
+  --secondary-color: #3ECF8E;
+  --secondary-hover: #2EBD7E;
+  --secondary-light: #5EDBA4;
+  --secondary-subtle: rgba(62, 207, 142, 0.12);
+
+  /* ── Backgrounds ── */
+  --bg-color: #F0F6FA;
   --surface-color: #FFFFFF;
-  --text-dark: #1A1A1A;
-  --text-light: #666666;
-  --text-lighter: #9CA3AF;
-  --border-color: #F3F4F6;
-  
+
+  /* ── Text ── */
+  --text-dark: #0D2035;
+  --text-light: #4A6480;
+  --text-lighter: #8AA5BE;
+  --border-color: #DDE8F0;
+
   --white: #FFFFFF;
-  --gray-100: #F3F4F6;
-  --gray-200: #E5E7EB;
-  --gray-800: #1F2937;
-  
-  /* Premium Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.08);
-  --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
-  
-  /* Border Radius */
+  --gray-100: #EFF5FA;
+  --gray-200: #DDE8F0;
+  --gray-800: #0D2035;
+
+  /* ── Shadows (tinted blue) ── */
+  --shadow-sm: 0 2px 8px rgba(26, 63, 92, 0.06);
+  --shadow-md: 0 4px 16px rgba(26, 63, 92, 0.10);
+  --shadow-lg: 0 10px 25px rgba(26, 63, 92, 0.13);
+  --shadow-hover: 0 20px 40px rgba(26, 63, 92, 0.18);
+
+  /* ── Border Radius ── */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-full: 9999px;
-  
-  /* Transitions */
+
+  /* ── Transitions ── */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,24 +120,37 @@ button {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: var(--text-dark);
-  box-shadow: 0 4px 14px rgba(252, 176, 69, 0.3);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(26, 63, 92, 0.30);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(252, 176, 69, 0.4);
+  box-shadow: 0 6px 20px rgba(26, 63, 92, 0.40);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(62, 207, 142, 0.35);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(62, 207, 142, 0.45);
 }
 
 .btn-outline {
   background-color: transparent;
-  border: 1px solid var(--gray-200);
-  color: var(--text-dark);
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn-outline:hover {
-  border-color: var(--text-dark);
+  background-color: var(--primary-subtle);
+  border-color: var(--primary-hover);
 }
 
 /* Glassmorphism utility */
@@ -161,7 +187,7 @@ input, select, textarea {
 
 input:focus, select:focus, textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(252, 176, 69, 0.1);
+  box-shadow: 0 0 0 3px var(--primary-subtle);
 }
 
 /* Icon alignments */

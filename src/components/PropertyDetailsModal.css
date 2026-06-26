@@ -184,7 +184,8 @@
 
 .modal-contact {
   margin-top: auto;
-  background: var(--gray-100);
+  background: var(--secondary-subtle);
+  border: 1px solid rgba(62, 207, 142, 0.2);
   padding: 1.5rem;
   border-radius: var(--radius-md);
   text-align: center;
@@ -196,14 +197,17 @@
 }
 
 .whatsapp-btn {
-  background-color: #25D366;
+  background-color: var(--secondary-color);
   color: white;
   width: 100%;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .whatsapp-btn:hover {
-  background-color: #128C7E;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  background-color: var(--secondary-hover);
+  box-shadow: 0 4px 14px rgba(62, 207, 142, 0.4);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
