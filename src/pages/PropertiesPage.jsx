@@ -94,13 +94,6 @@ const PropertiesPage = () => {
   return (
     <div className="properties-page">
       <Header brand={brand} forceScrolled={true} />
-      
-      <div className="properties-header">
-        <div className="container">
-          <h1>Propiedades</h1>
-          <p>Encuentra tu próximo hogar o inversión inmobiliaria</p>
-        </div>
-      </div>
 
       <div className="container properties-content">
         <main className="properties-main">
