@@ -128,7 +128,7 @@ const ContactForm = () => {
 
               <div className="form-group">
                 <label htmlFor="comments">Comentarios</label>
-                <textarea id="comments" name="comments" rows="4" placeholder="¿Qué tipo de propiedad estás buscando?" value={formData.comments} onChange={handleChange} required></textarea>
+                <textarea id="comments" name="comments" rows="3" placeholder="¿Qué tipo de propiedad estás buscando?" value={formData.comments} onChange={handleChange} required></textarea>
               </div>
 
               {/* ── CAPTCHA ── */}
