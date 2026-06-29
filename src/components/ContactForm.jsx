@@ -116,14 +116,15 @@ const ContactForm = () => {
                 <input type="text" id="name" name="name" placeholder="Juan Pérez" value={formData.name} onChange={handleChange} required />
               </div>
 
-              <div className="form-group">
-                <label htmlFor="phone">Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="+51 999..." value={formData.phone} onChange={handleChange} required />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" value={formData.email} onChange={handleChange} required />
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="phone">Teléfono</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+51 999..." value={formData.phone} onChange={handleChange} required />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" value={formData.email} onChange={handleChange} required />
+                </div>
               </div>
 
               <div className="form-group">
