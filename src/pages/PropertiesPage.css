@@ -64,7 +64,7 @@
   display: block;
   font-weight: 600;
   margin-bottom: 0.3rem;
-  color: var(--text-dark);
+  color: var(--secondary-color);
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;

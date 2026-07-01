@@ -7,11 +7,11 @@
   --primary-light: #25af23;
   --primary-subtle: rgba(24, 152, 22, 0.08);
 
-  /* ── Secondary: Vibrant Mint Green ── */
-  --secondary-color: #3ECF8E;
-  --secondary-hover: #2EBD7E;
-  --secondary-light: #5EDBA4;
-  --secondary-subtle: rgba(62, 207, 142, 0.12);
+  /* ── Secondary: Orange ── */
+  --secondary-color: #f39e13;
+  --secondary-hover: #d9850c;
+  --secondary-light: #f5b041;
+  --secondary-subtle: rgba(243, 158, 19, 0.12);
 
   /* ── Backgrounds ── */
   --bg-color: #FFFFFF;
@@ -133,13 +133,13 @@ button {
 .btn-secondary {
   background-color: var(--secondary-color);
   color: var(--white);
-  box-shadow: 0 4px 14px rgba(62, 207, 142, 0.35);
+  box-shadow: 0 4px 14px rgba(243, 158, 19, 0.35);
 }
 
 .btn-secondary:hover {
   background-color: var(--secondary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(62, 207, 142, 0.45);
+  box-shadow: 0 6px 20px rgba(243, 158, 19, 0.45);
 }
 
 .btn-outline {
